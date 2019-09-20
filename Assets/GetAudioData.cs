@@ -113,6 +113,9 @@ public class GetAudioData : MonoBehaviour {
         }
     }
 
+	// Code most probably from 
+	// source A - https://stackoverflow.com/questions/53030560/read-microphone-decibels-and-pitch-frequency
+	// source B - https://stackoverflow.com/questions/53030560/read-microphone-decibels-and-pitch-frequency 
     void AnalyzeSound() {
         _audioSource.GetOutputData(_samples, 0); // fill array with samples
         int i;
